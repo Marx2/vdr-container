@@ -40,10 +40,10 @@ RUN mkdir /video
 
 # initialize with preset config files
 
+ADD target/diseqc.conf /etc/vdr/diseqc.conf
 ADD target/setup.conf /etc/vdr/setup.conf
 ADD target/channels.conf.terr /var/lib/vdr/channels.conf
 #ADD target/channels.conf.sat /var/lib/vdr/channels.conf
-#   ADD target/diseqc.conf /etc/vdr/diseqc.conf
 
 # runtime and port exposes
 
